@@ -1,0 +1,30 @@
+.about-us {
+  &__image {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    color: $black;
+    line-height: 1.5em;
+    text-align: center;
+
+    @media ($media-l-min) {
+      text-align: start;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    a {
+      color: $orange-default;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

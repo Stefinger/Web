@@ -1,0 +1,32 @@
+.btn {
+  &,
+  &:focus {
+    max-width: 235px;
+    width: 100%;
+    cursor: pointer;
+    color: $orange-default;
+    background: $white;
+    font-weight: 500;
+    padding: 0.6rem 4rem;
+    border: 1px solid #E84D0F;
+    border-radius: 22px;
+    transition: color 0.3s ease, background 0.3s ease;
+    text-wrap: nowrap;
+  }
+
+  &:hover {
+    color: $white;
+    background: $orange-default;
+  }
+
+  &--orange {
+    color: $white;
+    background: $orange-default;
+    border: 2px solid #E84D0F;
+
+    &:hover {
+      color: $orange-default;
+      background: $white;
+      border: 2px solid #E84D0F;    }
+  }
+}

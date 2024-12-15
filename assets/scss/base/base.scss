@@ -1,0 +1,79 @@
+body *:focus {outline:none}
+div, section, article, header, figure, nav, footer, label, main, button, aside, form {position:relative}
+img {max-width:100%}
+a {text-decoration:none; transition:color 300ms;color: $white}
+a:focus,
+a:hover {text-decoration:none;}
+html, body {letter-spacing: -0.01em;
+  line-height: 1.75em;
+  font-family:$font-family-default;
+  font-size:$font-size-default;
+  font-weight:$font-weight-default;
+  color:$text-color-default;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-text-size-adjust:100%;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  background: #FFFFFF;
+}
+
+h1{
+  font-family: $font-family-default;
+}
+
+img,
+svg {max-width: 100%;display: block;}
+
+// sticky footer
+body {display:flex;min-height:100vh;flex-direction:column;overflow-x: hidden;margin: 0;}
+
+.page-wrap {flex:1 0 auto;margin: 0;padding-top: 120px;}
+.background-wrap{background: #F2F2F2}
+
+h1 {
+  margin: 0;
+  color: $black;
+  font-size: 2.5rem;
+  line-height: 1.2em;
+
+  @media ($media-m-min) {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  margin: 0;
+  color: $black;
+  font-size: 2.25rem;
+  line-height: 1.2em;
+}
+
+.space-between-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  @media ($media-m-min) {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  @media ($media-xl-min) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.custom-tooltip {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.custom-tooltip.show {
+  opacity: 1;
+}
+
+canvas {
+  max-width: 800px;
+  margin: 0 auto;
+}

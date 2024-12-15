@@ -1,0 +1,65 @@
+.graph {
+  canvas {
+    width: 350px !important;
+
+    @media ($media-s-min) {
+      width: 450px !important;
+    }
+
+    @media ($media-m-min) {
+      width: 550px !important;
+    }
+
+    @media ($media-l-min) {
+      width: 700px !important;
+    }
+
+    @media ($media-xl-min) {
+      width: 800px !important;
+    }
+  }
+
+  &__legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 0.25rem;
+
+    @media ($media-s-min) {
+      flex-direction: row;
+      gap: 1.25rem;
+    }
+
+    .text {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+
+        &--low {
+          background-color: #FFCC99;
+        }
+
+        &--medium {
+          background-color: #FF5733;
+        }
+
+        &--high {
+          background-color: #C70039;
+        }
+      }
+
+      span {
+        color: $black;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        line-height: 1.2em;
+      }
+    }
+  }
+}

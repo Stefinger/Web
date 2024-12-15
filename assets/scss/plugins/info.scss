@@ -1,0 +1,105 @@
+.info {
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem 2rem;
+    justify-items: center;
+
+    @media ($media-l-min) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item {
+      cursor: pointer;
+      padding: 2.125rem 1.25rem 1.5rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      background: #F2F2F2;
+      transition: border 0.3s ease, transform 0.3s ease;
+      border: 1px solid transparent;
+
+      @media ($media-s-min) {
+        padding: 2rem;
+      }
+
+      @media ($media-m-min) and ($media-m-max) {
+        width: 450px;
+      }
+
+      @media ($media-l-min) {
+        padding: 2.125rem 1.25rem 1.5rem 1.25rem;
+      }
+
+      &:hover {
+        transform: translateY(-10px);
+        border: 1px solid $black;
+      }
+
+      &--black {
+        background: $black;
+        border: 2px solid transparent;
+
+        &:hover {
+          border: 2px solid $orange-default;
+        }
+
+        .item__text {
+          .title {
+            color: $white;
+          }
+
+          .text {
+            color: $white;
+          }
+        }
+
+        .item__date {
+          .date {
+            color: $white;
+          }
+        }
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          color: $black;
+          font-size: 2.375rem;
+          line-height: 1.16em;
+          font-weight: bold;
+        }
+
+        .text {
+          color: $black;
+          font-size: 1.25rem;
+          line-height: 1.4em;
+          margin-top: 1.75rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+
+      &__date {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        .date {
+          color: $black;
+          font-size: 0.8125rem;
+          line-height: 1.84em;
+          text-transform: uppercase;
+        }
+
+        .hashtag {
+          color: $orange-default;
+          font-weight: 600;
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "author": "Jan Stefko",
+  "browserslist": [
+    ">1%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not ie < 10"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.16.4",
+    "animate.css": "^4.1.1",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.27.4",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "copy-webpack-plugin": "^9.0.0",
+    "css-loader": "^6.5.1",
+    "expose-loader": "^4.0.0",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.2.0",
+    "image-minimizer-webpack-plugin": "^3.2.3",
+    "imagemin": "^8.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^10.0.1",
+    "jquery": "^3.6.0",
+    "live-form-validation": "^1.10.0",
+    "mapbox-gl": "^2.9.2",
+    "mini-css-extract-plugin": "^2.4.5",
+    "moment": "^2.29.1",
+    "nette.ajax.js": "^2.3.0",
+    "node-sass": "^7.0.1",
+    "postcss-loader": "^6.2.0",
+    "resolve-url-loader": "^4.0.0",
+    "sass-loader": "^12.3.0",
+    "source-map-loader": "^5.0.0",
+    "ublaboo-datagrid": "^6.9.1",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  },
+  "scripts": {
+    "dev-libs": "webpack --config webpack.vendor.config.js --mode development --progress",
+    "dev": "webpack --mode development --watch",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "fslightbox": "^3.4.1",
+    "gsap": "^3.12.5",
+    "imagesloaded": "^5.0.0",
+    "jquery-bridget": "^3.0.1",
+    "masonry-layout": "^4.2.2",
+    "swiper": "^11.1.15"
+  }
+}

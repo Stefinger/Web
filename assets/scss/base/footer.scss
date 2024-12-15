@@ -1,0 +1,38 @@
+.footer {
+  padding: 1rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__copyright {
+    color: $orange-default;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.7em;
+    text-transform: uppercase;
+  }
+
+  &__year {
+    color: $black;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-transform: uppercase;
+  }
+
+  &__company {
+    margin-top: 1.75rem;
+    color: $black;
+    line-height: 1.5em;
+
+    a {
+      color: $orange-default;
+      transition: all 0.3s ease;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
