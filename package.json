@@ -67,5 +67,6 @@
     "jquery-bridget": "^3.0.1",
     "masonry-layout": "^4.2.2",
     "swiper": "^11.1.15"
-  }
+  },
+  "homepage": "https://stefinger.github.io/Web/"
 }
