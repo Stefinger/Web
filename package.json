@@ -57,7 +57,8 @@
   "scripts": {
     "dev-libs": "webpack --config webpack.vendor.config.js --mode development --progress",
     "dev": "webpack --mode development --watch",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
