@@ -110,6 +110,7 @@ module.exports = (env, argv) => {
             }),
             new CopyWebpackPlugin({
                 patterns: [
+                    { from: './index.html', to: '', noErrorOnMissing: true },
                     { from: './assets/favicon', to: 'favicon', noErrorOnMissing: true },
                     { from: './assets/img/other-images', to: 'other-images', noErrorOnMissing: true },
                 ]
